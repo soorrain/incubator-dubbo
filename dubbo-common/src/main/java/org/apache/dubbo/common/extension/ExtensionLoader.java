@@ -600,6 +600,10 @@ public class ExtensionLoader<T> {
         return classes;
     }
 
+    /**
+     * TODO mimihom
+     * @return
+     */
     // synchronized in getExtensionClasses
     private Map<String, Class<?>> loadExtensionClasses() {
         final SPI defaultAnnotation = type.getAnnotation(SPI.class);

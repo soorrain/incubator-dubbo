@@ -34,6 +34,10 @@ import static org.junit.Assert.assertThat;
 
 public class ProtocolConfigTest {
 
+    /**
+     * TODO testCase
+     * @throws Exception
+     */
     @Test
     public void testDestroy() throws Exception {
         Protocol protocol = Mockito.mock(Protocol.class);
