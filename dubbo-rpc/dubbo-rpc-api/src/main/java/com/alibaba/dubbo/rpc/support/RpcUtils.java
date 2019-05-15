@@ -108,6 +108,7 @@ public class RpcUtils {
     }
 
     public static String getMethodName(Invocation invocation) {
+        // 泛化调用，方法名为第一个参数
         if (Constants.$INVOKE.equals(invocation.getMethodName())
                 && invocation.getArguments() != null
                 && invocation.getArguments().length > 0
@@ -118,6 +119,7 @@ public class RpcUtils {
     }
 
     public static Object[] getArguments(Invocation invocation) {
+        // 泛化调用，参数为第三个参数
         if (Constants.$INVOKE.equals(invocation.getMethodName())
                 && invocation.getArguments() != null
                 && invocation.getArguments().length > 2
