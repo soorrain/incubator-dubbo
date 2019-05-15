@@ -45,6 +45,7 @@ public class ProtocolUtils {
         return buf.toString();
     }
 
+    // 是否为泛化调用
     public static boolean isGeneric(String generic) {
         return generic != null
                 && !"".equals(generic)
